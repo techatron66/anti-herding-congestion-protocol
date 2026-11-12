@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-04",
+  "runtime": {"os": "Ubuntu 24.04 on WSL2", "mininet": "2.3.0", "open_v_switch": "3.3.9", "iperf3": "3.16"},
+  "connectivity": {"pingall": "passed, 0% loss", "source_path_checks": 8, "result": "all passed"},
+  "workload": {"source_count": 4, "udp_mbps_each": 3, "aggregate_offered_mbps": 12, "path_capacity_mbps": 10, "run_duration_seconds": 25},
+  "runs": {
+    "static": {"run_id": "20261104-133650-eee789", "path_a_peak_utilization": 1.0101, "path_b_peak_utilization": 0.0002, "route_changes": 0},
+    "reactive": {"run_id": "20261104-133729-1c664f", "path_a_peak_utilization": 1.0030, "path_b_peak_utilization": 1.0233, "route_changes": 4},
+    "hysteresis": {"run_id": "20261104-133809-5f46b5", "path_a_peak_utilization": 1.0200, "path_b_peak_utilization": 1.0288, "route_changes": 4},
+    "intent": {"run_id": "20261104-133850-a9d8a2", "path_a_peak_utilization": 1.0051, "path_b_peak_utilization": 0.6273, "admitted_reroutes": 2, "rejected_reroutes": 2, "aggregate_goodput_mbps": 11.9691, "release_acknowledgements": 2}
+  },
+  "terminal_capture_directory": "results/terminal/20261104-rerun",
+  "raw_run_directory": "results/raw",
+  "limitations": ["One rerun per policy only; repeated trials and confidence intervals remain outstanding.", "These measurements are from Mininet under WSL2, not physical hardware."]
+}

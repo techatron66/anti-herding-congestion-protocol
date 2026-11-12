@@ -1,0 +1,100 @@
+{
+  "run_id": "20261104-133729-1c664f",
+  "policy": "reactive",
+  "scenario": "herd",
+  "offered_per_source_mbps": 3,
+  "aggregate_offered_mbps": 12,
+  "path_capacity_mbps": 10,
+  "congestion_reproduced_by_offered_load": true,
+  "time_above_threshold_seconds": 24.778219000000036,
+  "max_sampled_utilization": {
+    "A": 1.0029943483114803,
+    "B": 1.0232588711322632
+  },
+  "route_change_attempted": true,
+  "successful_route_changes": 4,
+  "route_decisions": [
+    {
+      "timestamp": 1793799458.9530008,
+      "flow_id": "h1",
+      "switched": true,
+      "path": "B",
+      "reason": "route_updated"
+    },
+    {
+      "timestamp": 1793799458.932682,
+      "flow_id": "h2",
+      "switched": true,
+      "path": "B",
+      "reason": "route_updated"
+    },
+    {
+      "timestamp": 1793799458.922232,
+      "flow_id": "h3",
+      "switched": true,
+      "path": "B",
+      "reason": "route_updated"
+    },
+    {
+      "timestamp": 1793799458.962873,
+      "flow_id": "h4",
+      "switched": true,
+      "path": "B",
+      "reason": "route_updated"
+    }
+  ],
+  "flows": [
+    {
+      "source": "h1",
+      "throughput_mbps": 2.153612768006489,
+      "lost_packets": 1606,
+      "packets": 6475,
+      "loss_percent": 24.8030888030888
+    },
+    {
+      "source": "h2",
+      "throughput_mbps": 2.721725937496993,
+      "lost_packets": 322,
+      "packets": 6475,
+      "loss_percent": 4.972972972972973
+    },
+    {
+      "source": "h3",
+      "throughput_mbps": 2.4757269843815943,
+      "lost_packets": 879,
+      "packets": 6475,
+      "loss_percent": 13.575289575289576
+    },
+    {
+      "source": "h4",
+      "throughput_mbps": 2.8100271099403855,
+      "lost_packets": 125,
+      "packets": 6475,
+      "loss_percent": 1.9305019305019304
+    }
+  ],
+  "ping_rtt": {
+    "h1": {
+      "samples": 22,
+      "mean_ms": 848.9581818181819,
+      "p95_ms": 1192.0
+    },
+    "h2": {
+      "samples": 20,
+      "mean_ms": 807.2835,
+      "p95_ms": 1191.0
+    },
+    "h3": {
+      "samples": 19,
+      "mean_ms": 787.6136842105263,
+      "p95_ms": 1191.0
+    },
+    "h4": {
+      "samples": 18,
+      "mean_ms": 761.1188888888888,
+      "p95_ms": 1191.0
+    }
+  },
+  "connectivity_checks": 8,
+  "results_dir": "results/raw/20261104-133729-1c664f"
+}

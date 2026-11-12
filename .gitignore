@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+results/raw/*
+!results/raw/.gitkeep
+.codex-presentation-validation*.json
+reports/.presentation-build/
+reports/preview/
+reports/Anti_Herding_Mininet_Rerun_Report_20261104.pptx
+reports/Anti_Herding_Mininet_Simple_Post_Decongestion_20261104.pptx

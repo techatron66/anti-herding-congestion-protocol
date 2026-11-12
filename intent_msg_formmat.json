@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "type": "INTENT",
+  "created_at": 1760000000.0,
+  "request_id": "unique-request-uuid",
+  "flow_id": "h1",
+  "source_router": "h1",
+  "candidate_path": "B",
+  "requested_rate_mbps": 3.0,
+  "expires_at": 1760000002.0,
+  "link_id": "B"
+}

@@ -1,0 +1,16 @@
+{
+  "capacity_mbps": 10,
+  "offered_rate_mbps": 3,
+  "duration_seconds": 25,
+  "warmup_seconds": 3,
+  "congestion_threshold": 0.85,
+  "congestion_consecutive_samples": 3,
+  "sample_interval_seconds": 0.25,
+  "minimum_improvement": 0.1,
+  "cooldown_seconds": 2,
+  "admission_threshold": 0.85,
+  "intent_ttl_seconds": 2,
+  "route_change_delay_seconds": 5,
+  "udp_port_base": 5201,
+  "results_dir": "results/raw"
+}

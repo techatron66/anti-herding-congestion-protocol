@@ -1,0 +1,29 @@
+{
+  "status": "initial_milestone_verified",
+  "verified": {
+    "connectivity": "All four sources reached the destination over both paths (8 checks); see the Mininet smoke command in README.md.",
+    "static_run": "20261104-131815-651638",
+    "reactive_run": "20261104-131856-f97ef3",
+    "hysteresis_run": "20261104-132444-83d831",
+    "intent_run": "20261104-132714-e460a3",
+    "intent_release_acknowledgements": 2
+  },
+  "latest_reruns": {
+    "connectivity": "passed, 8 checks",
+    "static": "20261104-133650-eee789",
+    "reactive": "20261104-133729-1c664f",
+    "hysteresis": "20261104-133809-5f46b5",
+    "intent": "20261104-133850-a9d8a2",
+    "terminal_captures": "results/terminal/20261104-rerun"
+  },
+  "scenarios": [
+    "staggered reroute",
+    "asymmetric path capacities",
+    "background traffic on candidate path",
+    "offered-load sweep",
+    "control delay, loss, duplication, and agent failure",
+    "admission-threshold and lease-TTL sensitivity",
+    "at least 10 repetitions per main configuration"
+  ],
+  "note": "Initial demonstration is one run per policy. Repetitions, sensitivity, asymmetric, background-traffic, and control-fault scenarios remain planned; do not treat the initial run as a comparative study."
+}

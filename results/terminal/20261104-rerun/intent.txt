@@ -1,0 +1,108 @@
+{
+  "run_id": "20261104-133850-a9d8a2",
+  "policy": "intent",
+  "scenario": "herd",
+  "offered_per_source_mbps": 3,
+  "aggregate_offered_mbps": 12,
+  "path_capacity_mbps": 10,
+  "congestion_reproduced_by_offered_load": true,
+  "time_above_threshold_seconds": 8.34431035800003,
+  "max_sampled_utilization": {
+    "A": 1.0051240027818338,
+    "B": 0.6273182845033851
+  },
+  "route_change_attempted": true,
+  "successful_route_changes": 2,
+  "route_decisions": [
+    {
+      "timestamp": 1793799540.3134384,
+      "flow_id": "h1",
+      "switched": true,
+      "path": "B",
+      "reason": "committed",
+      "request_id": "de3c4ac7-ad1e-46bf-8df0-96b43a689b08",
+      "granted_links": [
+        "B"
+      ]
+    },
+    {
+      "timestamp": 1793799540.2864676,
+      "flow_id": "h2",
+      "switched": false,
+      "reason": "capacity",
+      "rejected_link": "B"
+    },
+    {
+      "timestamp": 1793799540.3334348,
+      "flow_id": "h3",
+      "switched": true,
+      "path": "B",
+      "reason": "committed",
+      "request_id": "9bea32b7-b96a-45bc-9fab-69cf4454f050",
+      "granted_links": [
+        "B"
+      ]
+    },
+    {
+      "timestamp": 1793799540.278184,
+      "flow_id": "h4",
+      "switched": false,
+      "reason": "capacity",
+      "rejected_link": "B"
+    }
+  ],
+  "flows": [
+    {
+      "source": "h1",
+      "throughput_mbps": 2.9867512340407356,
+      "lost_packets": 28,
+      "packets": 6475,
+      "loss_percent": 0.43243243243243246
+    },
+    {
+      "source": "h2",
+      "throughput_mbps": 2.9941362555820072,
+      "lost_packets": 12,
+      "packets": 6475,
+      "loss_percent": 0.18532818532818532
+    },
+    {
+      "source": "h3",
+      "throughput_mbps": 2.991322759481981,
+      "lost_packets": 18,
+      "packets": 6475,
+      "loss_percent": 0.277992277992278
+    },
+    {
+      "source": "h4",
+      "throughput_mbps": 2.996938548856961,
+      "lost_packets": 6,
+      "packets": 6475,
+      "loss_percent": 0.09266409266409266
+    }
+  ],
+  "ping_rtt": {
+    "h1": {
+      "samples": 26,
+      "mean_ms": 122.61307692307693,
+      "p95_ms": 857.0
+    },
+    "h2": {
+      "samples": 26,
+      "mean_ms": 203.60384615384615,
+      "p95_ms": 1089.0
+    },
+    "h3": {
+      "samples": 26,
+      "mean_ms": 122.9076923076923,
+      "p95_ms": 858.0
+    },
+    "h4": {
+      "samples": 26,
+      "mean_ms": 204.07038461538463,
+      "p95_ms": 1091.0
+    }
+  },
+  "connectivity_checks": 8,
+  "results_dir": "results/raw/20261104-133850-a9d8a2"
+}

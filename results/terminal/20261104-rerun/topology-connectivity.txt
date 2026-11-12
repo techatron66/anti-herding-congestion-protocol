@@ -1,0 +1,8 @@
+h1 via path A: reachable
+h1 via path B: reachable
+h2 via path A: reachable
+h2 via path B: reachable
+h3 via path A: reachable
+h3 via path B: reachable
+h4 via path A: reachable
+h4 via path B: reachable

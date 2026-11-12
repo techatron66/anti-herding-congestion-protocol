@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-04",
+  "environment": {
+    "os": "Ubuntu 24.04 on WSL2",
+    "mininet": "2.3.0",
+    "open_vswitch": "3.3.9",
+    "iperf3": "3.16"
+  },
+  "connectivity": {
+    "command": "python3 topology/mininet_topology.py --smoke",
+    "result": "passed",
+    "checks": 8,
+    "detail": "h1-h4 each pinged the destination once through Path A and once through Path B."
+  },
+  "workload": {
+    "sources": 4,
+    "offered_mbps_per_source": 3,
+    "aggregate_offered_mbps": 12,
+    "capacity_mbps_per_path": 10,
+    "duration_seconds": 25
+  },
+  "runs": {
+    "static": "20261104-131815-651638",
+    "reactive": "20261104-131856-f97ef3",
+    "hysteresis": "20261104-132444-83d831",
+    "intent": "20261104-132714-e460a3"
+  },
+  "observations": {
+    "static_max_utilization_path_a": 1.0326,
+    "reactive_max_utilization_path_a": 1.0033,
+    "reactive_max_utilization_path_b": 1.0053,
+    "hysteresis_max_utilization_path_a": 1.0033,
+    "hysteresis_max_utilization_path_b": 1.0064,
+    "intent_successful_reroutes": 2,
+    "intent_rejected_reroutes": 2,
+    "intent_max_utilization_path_b": 0.6373,
+    "intent_release_acknowledgements": 2
+  },
+  "caveat": "One run per policy demonstrates the mechanism only; it is not a repeated or statistically conclusive comparison."
+}

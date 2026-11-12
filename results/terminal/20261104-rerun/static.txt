@@ -1,0 +1,71 @@
+{
+  "run_id": "20261104-133650-eee789",
+  "policy": "static",
+  "scenario": "herd",
+  "offered_per_source_mbps": 3,
+  "aggregate_offered_mbps": 12,
+  "path_capacity_mbps": 10,
+  "congestion_reproduced_by_offered_load": true,
+  "time_above_threshold_seconds": 24.87080280500004,
+  "max_sampled_utilization": {
+    "A": 1.01010318567045,
+    "B": 0.0002199678926222733
+  },
+  "route_change_attempted": false,
+  "successful_route_changes": 0,
+  "route_decisions": [],
+  "flows": [
+    {
+      "source": "h1",
+      "throughput_mbps": 2.111851188742882,
+      "lost_packets": 1700,
+      "packets": 6475,
+      "loss_percent": 26.254826254826256
+    },
+    {
+      "source": "h2",
+      "throughput_mbps": 2.5259717824142087,
+      "lost_packets": 764,
+      "packets": 6475,
+      "loss_percent": 11.7992277992278
+    },
+    {
+      "source": "h3",
+      "throughput_mbps": 2.2476910857882797,
+      "lost_packets": 1394,
+      "packets": 6475,
+      "loss_percent": 21.52895752895753
+    },
+    {
+      "source": "h4",
+      "throughput_mbps": 2.8164237500723854,
+      "lost_packets": 110,
+      "packets": 6475,
+      "loss_percent": 1.6988416988416988
+    }
+  ],
+  "ping_rtt": {
+    "h1": {
+      "samples": 16,
+      "mean_ms": 877.69875,
+      "p95_ms": 1228.0
+    },
+    "h2": {
+      "samples": 22,
+      "mean_ms": 975.3227272727272,
+      "p95_ms": 1194.0
+    },
+    "h3": {
+      "samples": 18,
+      "mean_ms": 914.7494444444445,
+      "p95_ms": 1226.0
+    },
+    "h4": {
+      "samples": 17,
+      "mean_ms": 893.185294117647,
+      "p95_ms": 1193.0
+    }
+  },
+  "connectivity_checks": 8,
+  "results_dir": "results/raw/20261104-133650-eee789"
+}
